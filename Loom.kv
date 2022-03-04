@@ -1,0 +1,112 @@
+ActualSample:
+
+<ActualSample>:
+	orientation: "vertical"
+	
+	AnchorLayout:
+		anchor_x: "left"
+		size_hint: 1, .05
+		BoxLayout:
+			size_hint: .6, 1
+			Button:
+				text: "File"
+			Button:
+				text: "Edit"
+			Button:
+				text: "Note"
+			Button:
+				text: "View"
+			Button:
+				text: "Help"
+	BoxLayout:
+		BoxLayout:
+			size_hint: .3, 1
+			
+			orientation: "vertical"
+			Button:
+				text: "Note 1"
+			Button:
+				text: "Note 2"
+			Button:
+				text: "Note 3"
+			Button:
+				text: "Note 4"
+			Button:
+				text: "Note 5"
+			Button:
+				text: "Note 6"
+		BoxLayout:
+			orientation: "vertical"
+			Label:
+				text: "No open note"
+				size_hint: 1, 0.05
+			Button:
+				text: "Click to create a new note"
+
+<GridLayoutExample>:
+	cols: 2
+
+	Button:
+		text: "A"
+	Button:
+		text: "B"
+	Button:
+		text: "C"
+	Button:
+		text: "D"
+	Button:
+		text: "E"
+	Button:
+		text: "F"
+
+<AnchorLayoutExample>:
+	# right, left, center
+	anchor_x: "center"
+
+	# top, bottom, center
+	anchor_y: "top"
+	BoxLayout:
+		size_hint: .2, .2
+		Button:
+			text: "A"
+
+		Button:
+			text: "B"
+
+<BoxLayoutExample>:
+	#orientation: "vertical"
+
+	Button:
+		text: "A"
+		#size: "100dp", "60dp"
+		#width: "100dp"
+		height: "60dp"
+		size_hint: .5, None
+
+		# x, center_x, right
+		pos_hint: { "center_y": .5}
+	
+	BoxLayout:
+		orientation: "vertical"
+		spacing: "10dp"
+		Button:
+			text: "B1"
+			#size_hint: 1, 2
+		Button:
+			text: "B2"
+	
+	Label:
+		text: "C"
+
+<MainWidget>:
+	Button:
+		text: "Hello"
+		size: "100dp", "80dp"
+		pos: "100dp", "200dp"
+		color: 0, 0, 1, 1
+
+	Label:
+		text: "Hello Ulit"
+		size: "100dp", "80dp"
+		pos: "200dp", "300dp"
+		color: 1, 0, 0, 1
